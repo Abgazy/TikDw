@@ -23,6 +23,7 @@ function downloadVideo() {
     var link = document.getElementById("tiktokLink").value;
     if (!link) { alert("انسخ رابط الفيديو أولاً"); return; }
     
+    // التعديل: استخدام API الجديد على Vercel
     var downloadUrl = "https://tiktokdl-hfwj5oltx-abogazys-projects-5aa7c8de.vercel.app/api/download?url=" + encodeURIComponent(link);
     window.open(downloadUrl, "_blank");
 }
